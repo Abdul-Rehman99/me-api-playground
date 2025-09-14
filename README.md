@@ -2,7 +2,7 @@
 
 A full-stack application that serves as a personal portfolio API with authentication, allowing users to manage and showcase their professional profile, skills, projects, and experience.
 
-**Live Demo:** [https://lustrous-naiad-40b50b.netlify.app/](https://me-api-playground-xi.vercel.app/)
+**Live Demo:** https://me-api-playground-xi.vercel.app/
 
 ---
 
