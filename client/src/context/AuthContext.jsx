@@ -3,6 +3,8 @@ import axios from "axios";
 
 const AuthContext = createContext();
 
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api'
+
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
@@ -26,7 +28,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchUserProfile = async () => {
     try {
-      const response = await axios.get("/api/auth/me", {
+      const response = await axios.get(API_BASE+"/api/auth/me", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
